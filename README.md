@@ -9,3 +9,18 @@ Recently, Multimodal Large Language Models (MLLMs) have demonstrated their immen
     src="./figures/overview.png"
   >
 </p>
+
+## Installation (Linux)
+1. Clone this repository and navigate to the Endochat folder
+```bash
+git clone https://github.com/gkw0010/EndoChat
+cd EndoChat/
+```
+
+2. Install required packages
+```Shell
+pip install -e .
+```
+
+## Data Download
+The free download data can be downloaded through [this link](https://mycuhk-my.sharepoint.com/:f:/g/personal/1155180074_link_cuhk_edu_hk/Eo_sCGxP1ZRKu72NT10fQhkBiiEsINhrN6s63rQpo3mvvA).
