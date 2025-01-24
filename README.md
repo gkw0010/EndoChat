@@ -22,6 +22,7 @@ cd EndoChat/
 pip install -e .
 ```
 
+## Environment Setup
 ## Finetuning
 ## Inference
 
