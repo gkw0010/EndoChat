@@ -10,7 +10,9 @@ Recently, Multimodal Large Language Models (MLLMs) have demonstrated their immen
   >
 </p>
 
-## Installation (Linux)
+
+
+## Environment Setup(Linux)
 1. Clone this repository and navigate to the Endochat folder
 ```bash
 git clone https://github.com/gkw0010/EndoChat
@@ -21,10 +23,13 @@ cd EndoChat/
 ```Shell
 pip install -e .
 ```
-
-## Environment Setup
-## Finetuning
-## Inference
+Follow the instructions provided in the LLaMA2-Accessory repository to set up the environment.
 
 ## Data Download
 The Surg-396K dataset can be downloaded through [this link](https://mycuhk-my.sharepoint.com/:f:/g/personal/1155180074_link_cuhk_edu_hk/Eo_sCGxP1ZRKu72NT10fQhkBrJCg9brRs_D_peG7EaxPIg?e=nVvOyQ).
+
+Download the pretrained Sphinx-Tiny-1k models from huggingface and place them in the sphinx_esd/accessory/data/SPHINX-Tiny directory.
+## Finetuning
+## Inference
+
+
