@@ -22,5 +22,8 @@ cd EndoChat/
 pip install -e .
 ```
 
+## Finetuning
+## Inference
+
 ## Data Download
 The Surg-396K dataset can be downloaded through [this link](https://mycuhk-my.sharepoint.com/:f:/g/personal/1155180074_link_cuhk_edu_hk/Eo_sCGxP1ZRKu72NT10fQhkBrJCg9brRs_D_peG7EaxPIg?e=nVvOyQ).
