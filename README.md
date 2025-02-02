@@ -40,6 +40,19 @@ To run inference using the fine-tuned models, use the following command:
 ```Shell
 python inference.py
 ```
+## Citation
+
+If you find ``EndoChat`` useful for your research or development, please cite the following:
+
+```latex
+@article{wang2025endochat,
+  title={EndoChat: Grounded Multimodal Large Language Model for Endoscopic Surgery},
+  author={Wang, Guankun and Bai, Long and Wang, Junyi and Yuan, Kun and Li, Zhen and Jiang, Tianxu and He, Xiting and Wu, Jinlin and Chen, Zhen and Lei, Zhen and others},
+  journal={arXiv preprint arXiv:2501.11347},
+  year={2025}
+}
+```
+
 
 
 
