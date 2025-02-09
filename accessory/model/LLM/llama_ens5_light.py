@@ -338,10 +338,10 @@ class Transformer(nn.Module):
             self.start_img = nn.Parameter(torch.rand(1, 1, args.dim))
             self.end_img = nn.Parameter(torch.rand(1, 1, args.dim))
         
-        ##wgk
+
         self.mlp_512 = nn.Sequential(OrderedDict([("linear1", nn.Linear(3072, 12)),("relu", nn.ReLU(inplace=True)),("linear2", nn.Linear(12, 1))]))
         self.mlp_224 = nn.Sequential(OrderedDict([("linear1", nn.Linear(1536, 12)),("relu", nn.ReLU(inplace=True)),("linear2", nn.Linear(12, 1))]))
-        ##wgk
+
 
 
     def get_trainable_params(self):
@@ -462,7 +462,7 @@ class Transformer(nn.Module):
         return ens_image_feats
 
 
-    def encode_image(self, image):    ##wgk
+    def encode_image(self, image):    
         # images should be of size [bsz, 1024, 1024]
         self.openclip_convnext_xxl.eval()
         self.dinov2_vitg14.eval()
