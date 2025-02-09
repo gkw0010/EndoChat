@@ -6,11 +6,11 @@ from accessory.model.meta import MetaModel
 
 from accessory.data.transform import get_transform
 from accessory.data.conversation import default_conversation
-##wgk
+
 from accessory.vcd_utils.vcd_add_noise import add_diffusion_noise
 from accessory.vcd_utils.vcd_sample import evolve_vcd_sampling
 evolve_vcd_sampling()
-##wgk
+
 
 class SPHINXModel(MetaModel):
     def generate_response(self, qas: List[List[str]], image: Optional[Image.Image],
@@ -40,9 +40,9 @@ class SPHINXModel(MetaModel):
             image = transform(image).to(list(self.parameters())[0])
 
 
-            ##wgk
+
             image_cd = add_diffusion_noise(image, 500)
-            ##wgk
+
             
         conv = default_conversation()
         assert qas[-1][1] is None
@@ -59,9 +59,9 @@ class SPHINXModel(MetaModel):
         response = self.generate(
             prompts=[prompt],
             images=image.unsqueeze(0) if image is not None else None,
-            images_cd=image_cd.unsqueeze(0) if image is not None else None, ##wgk
-            cd_alpha = 1,   ##wgk
-            cd_beta = 0.1,   ##wgk
+            images_cd=image_cd.unsqueeze(0) if image is not None else None, 
+            cd_alpha = 1, 
+            cd_beta = 0.1, 
             max_gen_len=max_gen_len,
             temperature=temperature,
             top_p=top_p,
