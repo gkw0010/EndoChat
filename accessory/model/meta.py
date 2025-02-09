@@ -373,9 +373,9 @@ class MetaModel(nn.Module):
         self,
         prompts: List[str],
         images: Optional[torch.FloatTensor] = None,
-        images_cd: Optional[torch.FloatTensor] = None,   ##wgk
-        cd_beta: Optional[torch.FloatTensor] = None,     ##wgk
-        cd_alpha: Optional[torch.FloatTensor] = None,    ##wgk
+        images_cd: Optional[torch.FloatTensor] = None,   
+        cd_beta: Optional[torch.FloatTensor] = None,     
+        cd_alpha: Optional[torch.FloatTensor] = None,    
         max_gen_len: int = 512,
         temperature: float = 0.0,
         top_p: float = 0.95,
