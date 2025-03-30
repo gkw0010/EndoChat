@@ -16,7 +16,7 @@ exp_name=llama_ens5_light_13b_esd
 echo "exp name: $exp_name"
 mkdir -p output/"$exp_name"
 
-torchrun --nproc_per_node=1 main_finetune_new.py \
+CUDA_VISIBLE_DEVICES=0,1,2,3 torchrun --nproc_per_node=4 main_finetune.py \
 --output_dir output/"$exp_name" --epochs 1 --warmup_epochs 0.01 \
 --batch_size 16 --accum_iter 4 --num_workers 4 \
 --max_words 3072 \
