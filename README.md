@@ -22,11 +22,8 @@ cd EndoChat/
 ### Install required packages
 1. Basic Setup
 ```bash
-# Create a new conda environment named 'accessory' with Python 3.10
-conda create -n accessory python=3.10 -y
-# Activate the 'accessory' environment
-conda activate accessory
-# Install required packages from 'requirements.txt'
+conda create -n endochat python=3.10 -y
+conda activate endochat
 pip install -r requirements.txt
 ```
 2. Install Flash-Attention
