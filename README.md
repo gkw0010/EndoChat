@@ -28,7 +28,6 @@ Follow the instructions provided in the [LLaMA2-Accessory](https://github.com/Al
 ## Data Download
 The Surg-396K dataset can be downloaded through [this link](https://mycuhk-my.sharepoint.com/:f:/g/personal/1155180074_link_cuhk_edu_hk/Eo_sCGxP1ZRKu72NT10fQhkBrJCg9brRs_D_peG7EaxPIg?e=nVvOyQ).
 
-Download the pretrained Sphinx-Tiny-1k models from huggingface and place them in the sphinx_esd/accessory/data/SPHINX-Tiny directory.
 ## Fine-tuning on Surg-396K dataset
 To fine-tune the Sphinx-Tiny-1k model on Surg-396K dataset with image size 1024, use the following commands:
 ```bash
