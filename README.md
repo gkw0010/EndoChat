@@ -51,6 +51,7 @@ bash exps/finetune_ens5_13b.sh
 ## Inference
 To run inference using the fine-tuned models, use the following command:
 ```Shell
+cd accessory/
 python inference.py
 ```
 ## Citation
