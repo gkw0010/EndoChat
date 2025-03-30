@@ -1,5 +1,0 @@
-META:
-  -
-    path: '/mnt1/wgk/LLaMA2-Accessory/accessory/finetune_data/total_train.json'
-#    path: '/mnt1/wgk/LLaMA2-Accessory/accessory/finetune_data/EndoVis-VQLA/qwen_train_resampled_v2.json'
-    type: 'text'
