@@ -13,13 +13,26 @@ Recently, Multimodal Large Language Models (MLLMs) have demonstrated their immen
 
 
 ## Environment Setup(Linux)
-1. Clone this repository and navigate to the Endochat folder
+### Clone this repository and navigate to the Endochat folder
 ```bash
 git clone https://github.com/gkw0010/EndoChat
 cd EndoChat/
 ```
 
-2. Install required packages
+### Install required packages
+1. Basic Setup
+```bash
+# Create a new conda environment named 'accessory' with Python 3.10
+conda create -n accessory python=3.10 -y
+# Activate the 'accessory' environment
+conda activate accessory
+# Install required packages from 'requirements.txt'
+pip install -r requirements.txt
+```
+2. Install Flash-Attention
+```bash
+pip install flash-attn --no-build-isolation
+```
 ```Shell
 pip install -e .
 ```
