@@ -43,7 +43,7 @@ The Surg-396K dataset can be downloaded through [this link](https://mycuhk-my.sh
 To fine-tune the Sphinx-Tiny-1k model on Surg-396K dataset with image size 1024, use the following commands:
 ```bash
 cd accessory/
-bash exps/finetune_ens5_13b.sh
+bash exps/finetune/finetune_ens5_13b.sh
 ```
 ## Inference
 To run inference using the fine-tuned models, use the following command:
