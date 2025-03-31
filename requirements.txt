@@ -10,7 +10,7 @@ gradio==3.50.2
 open_clip_torch
 fire
 packaging
-transformers
+transformers==4.36.2
 pyyaml
 pathlib
 Ninja
