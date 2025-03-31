@@ -26,15 +26,16 @@ conda create -n endochat python=3.10 -y
 conda activate endochat
 pip install -r requirements.txt
 ```
-2. Install Flash-Attention
+2. Install Flash-Attention(Optional)
+
+If you want to use flash-attention to increase computation efficiency, use the following command:
 ```bash
-pip install flash-attn --no-build-isolation
+pip install flash-attn==2.5.6 --no-build-isolation
 ```
 3. Install LLaMA2-Accessory as Python Packege
 ```Shell
 pip install -e .
 ```
-(Please refer to instructions provided in the [LLaMA2-Accessory](https://github.com/Alpha-VLLM/LLaMA2-Accessory) repository)
 
 ## Data Download
 The Surg-396K dataset can be downloaded through [this link](https://mycuhk-my.sharepoint.com/:f:/g/personal/1155180074_link_cuhk_edu_hk/Eo_sCGxP1ZRKu72NT10fQhkBrJCg9brRs_D_peG7EaxPIg?e=nVvOyQ).
