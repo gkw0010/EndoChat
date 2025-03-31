@@ -10,7 +10,7 @@ import torch
 model = SPHINXModel.from_pretrained(pretrained_path="/mnt/data1_hdd/wgk/SurgBot/accessory/output/llama_ens5_light_13b_esd/epoch0_esd_3C80_3endo_dd", with_visual=True)
 
 image = Image.open("/mnt/data1_hdd/wgk/SurgBot/accessory/finetune_data/CoPESD/023521/0001.jpg") 
-qas = [["Explain the various aspects of the image before you.", None]] #input your question here
+qas = [["What is in the image?", None]] #input your question here
 
 response = model.generate_response(qas, image, max_gen_len=1024, temperature=0.9, top_p=0.5, seed=0)
 # print("answer:")

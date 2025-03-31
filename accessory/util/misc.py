@@ -334,7 +334,7 @@ def save_checkpoint(output_dir, args, model, optimizer,
     with FSDP.state_dict_type(
             model,
             StateDictType.FULL_STATE_DICT,
-            FullStateDictConfig(rank0_only=True, offload_to_cpu=True),
+            FullStateDictConfig(rank0_only=True, offload_to_cpu=False), #set offload_to_cpu=False
     ):
         # run saving in separate functions to save memory
         def _save_model():
