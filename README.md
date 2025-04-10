@@ -41,7 +41,9 @@ pip install -e .
 The Surg-396K dataset can be downloaded through [this link](https://mycuhk-my.sharepoint.com/:f:/g/personal/1155180074_link_cuhk_edu_hk/Eo_sCGxP1ZRKu72NT10fQhkBrJCg9brRs_D_peG7EaxPIg?e=nVvOyQ).
 
 ## Fine-tuning on Surg-396K dataset
-To fine-tune the Sphinx-Tiny-1k model on Surg-396K dataset with image size 1024, use the following commands:
+To fine-tune the Sphinx-Tiny-1k model on Surg-396K dataset with image size 1024, follow these steps:
+1. download the checkpoint from [this link](https://huggingface.co/Alpha-VLLM/LLaMA2-Accessory/tree/main/finetune/mm/SPHINX/SPHINX-Tiny-1k)
+2. use the following commands:
 ```bash
 cd accessory/
 bash exps/finetune/finetune_ens5_13b.sh
