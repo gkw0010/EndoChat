@@ -1,5 +1,4 @@
 META:
   -
-    path: '/mnt/data1_hdd/wgk/EndoChat/accessory/finetune_data/total_train.json'
-#    path: '/mnt1/wgk/LLaMA2-Accessory/accessory/finetune_data/EndoVis-VQLA/qwen_train_resampled_v2.json'
+    path: 'finetune_data/total_train.json' #you can change it to your local training data path
     type: 'text'
