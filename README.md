@@ -48,6 +48,7 @@ To fine-tune the Sphinx-Tiny-1k model on Surg-396K dataset with image size 1024,
 cd accessory/
 bash exps/finetune/finetune_ens5_13b.sh
 ```
+Please note that you may need to change the path in ``accessory/configs/data/finetune/train.yaml`` if you encounter a missing file error. 
 ## Inference
 To run inference using the fine-tuned models, use the following command:
 ```Shell
