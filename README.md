@@ -38,7 +38,7 @@ pip install -e .
 ```
 
 ## Data Download
-The Surg-396K dataset can be downloaded through [this link](https://mycuhk-my.sharepoint.com/:f:/g/personal/1155180074_link_cuhk_edu_hk/Eo_sCGxP1ZRKu72NT10fQhkBrJCg9brRs_D_peG7EaxPIg?e=nVvOyQ).
+The Surg-396K dataset can be downloaded through [this link](https://mycuhk-my.sharepoint.com/:f:/g/personal/1155180074_link_cuhk_edu_hk/Eo_sCGxP1ZRKu72NT10fQhkB6Tnrg7qGm-_esKsHMq_I4w?e=oZKldQ).
 
 ## Fine-tuning on Surg-396K dataset
 To fine-tune the Sphinx-Tiny-1k model on Surg-396K dataset with image size 1024, follow these steps:
@@ -55,6 +55,7 @@ To run inference using the fine-tuned models, use the following command:
 cd accessory/
 python inference.py
 ```
+The Endochat model can be downloaded [here](https://huggingface.co/jwang01/endochat/tree/main).
 ## Citation
 
 If you find ``EndoChat`` useful for your research or development, please cite the following:
