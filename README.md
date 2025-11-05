@@ -40,8 +40,6 @@ pip install -e .
 ## Data Download
 The Surg-396K dataset can be downloaded through [this link](https://mycuhk-my.sharepoint.com/:f:/g/personal/1155180074_link_cuhk_edu_hk/Eo_sCGxP1ZRKu72NT10fQhkB6Tnrg7qGm-_esKsHMq_I4w?e=oZKldQ).
 
-## Checkpoint Download
-The checkpoint of EndoChat finetuned on Surg-396K dataset can be downloaded through [this link](https://huggingface.co/jwang01/endochat/tree/main).
 
 ## Fine-tuning on Surg-396K dataset
 To fine-tune the Sphinx-Tiny-1k model on Surg-396K dataset with image size 1024, follow these steps:
@@ -52,6 +50,8 @@ cd accessory/
 bash exps/finetune/finetune_ens5_13b.sh
 ```
 Please note that you may need to change the path in ``accessory/configs/data/finetune/train.yaml`` if you encounter a missing file error. 
+
+If you want to use the checkpoint fine-tuned on Surg-396K, you can download it through [this link](https://huggingface.co/jwang01/endochat/tree/main).
 
 ## Inference
 To run inference using the fine-tuned models, use the following command:
