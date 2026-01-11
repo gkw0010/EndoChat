@@ -54,11 +54,21 @@ Please note that you may need to change the path in ``accessory/configs/data/fin
 If you want to use the checkpoint fine-tuned on Surg-396K, you can download it through [this link](https://huggingface.co/jwang01/endochat/tree/main).
 
 ## Inference
-To run inference using the fine-tuned models, use the following command:
+To run single inference using the fine-tuned model, use the following command:
 ```Shell
 cd accessory/
 python inference.py
 ```
+
+If you want to run batch inference on your own dataset, use the following command:
+```Shell
+python3 inference_all.py \
+	--model_id "/path/to/your/model/checkpoint" \
+	--test_data_path "/path/to/your/test/data" \
+	--result_folder "/path/to/your/result/folder"
+```
+
+
 The Endochat model can be downloaded [here](https://huggingface.co/jwang01/endochat/tree/main).
 ## Citation
 
