@@ -62,7 +62,7 @@ python inference.py
 
 If you want to run batch inference on your own dataset, use the following command:
 ```Shell
-python3 inference_batch.py \
+python inference_batch.py \
 	--model_id "/path/to/your/model/checkpoint" \
 	--test_data_path "/path/to/your/test/data" \
 	--result_folder "/path/to/your/result/folder"
