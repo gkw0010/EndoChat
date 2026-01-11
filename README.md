@@ -62,12 +62,12 @@ python inference.py
 
 If you want to run batch inference on your own dataset, use the following command:
 ```Shell
-python3 inference_all.py \
+python3 inference_batch.py \
 	--model_id "/path/to/your/model/checkpoint" \
 	--test_data_path "/path/to/your/test/data" \
 	--result_folder "/path/to/your/result/folder"
 ```
-
+and see the result in "test_result.json" in result folder.
 
 The Endochat model can be downloaded [here](https://huggingface.co/jwang01/endochat/tree/main).
 ## Citation
