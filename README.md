@@ -68,10 +68,24 @@ python inference_batch.py \
 	--result_folder "/path/to/your/result/folder"
 ```
 and see the result in "test_result.json" in result folder.
-
 The Endochat model can be downloaded [here](https://huggingface.co/jwang01/endochat/tree/main).
-## Citation
 
+## Evaluation
+If you want to get the evaluation results of the metrics mentiond in our paper, use the following command: 
+```Shell
+python get_evaluation_result.py \
+	--result_folder "/path/to/your/result/folder"
+```
+and see the result in "evaluation_result.json" in result folder.
+
+Please note that for evaluation of detailed description task, you need to run the following command first to get the GPT scores, and then run the previous command.
+```Shell
+python score_description.py \
+	--result_folder "/path/to/your/result/folder"
+```
+The GPT scores can be found in "detailed_description_socre.json" in your result folder.
+
+## Citation
 If you find ``EndoChat`` useful for your research or development, please cite the following:
 
 ```latex
