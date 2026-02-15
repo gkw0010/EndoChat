@@ -37,7 +37,7 @@ def get_gpt_score(image_path=None,answer_gt=None,answer=None):
     }
 
     payload = {
-        "model": "gpt-4o",
+        "model": "your_llm",
         "messages": [
             {
                 "role": "user",
@@ -46,12 +46,6 @@ def get_gpt_score(image_path=None,answer_gt=None,answer=None):
                         "type": "text",
                         "text": text_prompt
                     },
-                    # {
-                    #     "type": "image_url",
-                    #     "image_url": {
-                    #         "url": f"data:image/jpeg;base64,{base64_image}"
-                    #     }
-                    # }
                 ]
             }
         ],
