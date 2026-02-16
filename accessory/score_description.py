@@ -12,7 +12,7 @@ def encode_image(image_path):
 def get_gpt_score(image_path=None,answer_gt=None,answer=None):
     # Path to your image
     # print(image_path)
-
+    
     # Getting the base64 string
     # base64_image = encode_image(image_path)
     # base64_image = encode_image(r"img.png")
