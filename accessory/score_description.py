@@ -12,8 +12,6 @@ def encode_image(image_path):
 def get_gpt_score(image_path=None,answer_gt=None,answer=None):
     # Path to your image
     # print(image_path)
-    # OpenAI API Key
-    api_key = "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"
 
     # Getting the base64 string
     # base64_image = encode_image(image_path)
