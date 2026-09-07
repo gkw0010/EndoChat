@@ -324,9 +324,9 @@ def calculate_metric_for_description(description_result_path):
 if __name__ == "__main__":
     
     parser = argparse.ArgumentParser(description='Calculate metrics for model results.')
-    parser.add_argument('--model_test_result_folder', type=str, required=True, help='Path to the model test result folder')
+    parser.add_argument('--result_folder', type=str, required=True, help='Path to the model test result folder')
     args = parser.parse_args()
-    model_test_result_folder = args.model_test_result_folder
+    model_test_result_folder = args.result_folder
     # model_test_result_folder ="/mnt/data1/bailong/wgk/endochat_revise/test/result/Qwen2.5-VL-7B-Instruct-endochat"
     result_path= os.path.join(model_test_result_folder, "test_result.json")
     description_result_path=os.path.join(model_test_result_folder,"detailed_description_score.json")
